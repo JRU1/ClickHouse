@@ -60,7 +60,6 @@ static std::initializer_list<std::pair<ClickHouseVersion, SettingsChangesHistory
 {
     {"24.12",
         {
-            {"query_plan_join_swap_table", "false", "auto", "New setting. Right table was always chosen before."},
         }
     },
     {"24.11",
@@ -90,6 +89,9 @@ static std::initializer_list<std::pair<ClickHouseVersion, SettingsChangesHistory
             {"s3_skip_empty_files", false, true, "We hope it will provide better UX"},
             {"filesystem_cache_boundary_alignment", 0, 0, "New setting"},
             {"push_external_roles_in_interserver_queries", false, false, "New setting."},
+            {"enable_variant_type", false, false, "Add alias to allow_experimental_variant_type"},
+            {"enable_dynamic_type", false, false, "Add alias to allow_experimental_dynamic_type"},
+            {"enable_json_type", false, false, "Add alias to allow_experimental_json_type"},
         }
     },
     {"24.10",
